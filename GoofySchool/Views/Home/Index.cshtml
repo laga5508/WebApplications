@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Goofy School of Flight</h1>
+    <p class="lead">
+        Instructor Pilot Mark La Gasse has been flying Goofy over a decade. If it can be "Goofed-up" in flight, he's done it.
+        Join him for goofy flight lesson that will keep you terrified, on the edge of your seat and in tears.
+        You only live once in these flight lessons.
+    </p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Course List", "Index", "Course")</h2>
+        
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("My Courses", "MyEnrollments", "Enrollment")</h2>
+        
+
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Course Enrollment", "Create", "Enrollment")</h2>
+        
+    </div>
+</div>
