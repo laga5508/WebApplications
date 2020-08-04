@@ -32,9 +32,7 @@
                 @Html.DisplayFor(modelItem => item.Student.Email)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.EnrollmentID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.EnrollmentID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.EnrollmentID })
+               @Html.ActionLink("Run to Safety", "Delete", new { id = item.EnrollmentID })
             </td>
         </tr>
     }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using GoofySchool.DAL;
 using GoofySchool.Models;
 using Microsoft.AspNet.Identity;
@@ -51,8 +52,10 @@ namespace GoofySchool.Controllers
         [Authorize]
         public ActionResult Create()
         {
+                             
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title");
-            ViewBag.StudentID = new SelectList(db.Students, "ID", "Email");
+            ViewBag.StudentID = new SelectList(db.Students, "Id", "Email");
+
             return View();
         }
 
@@ -65,6 +68,7 @@ namespace GoofySchool.Controllers
         {
             if (ModelState.IsValid)
             {
+               
                 db.Enrollments.Add(enrollment);
                 db.SaveChanges();
                 return RedirectToAction("MyEnrollments");
