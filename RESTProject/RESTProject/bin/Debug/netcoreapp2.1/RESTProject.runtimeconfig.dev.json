@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\MLaGasse\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MLaGasse\\.nuget\\packages"
+    ]
+  }
+}
